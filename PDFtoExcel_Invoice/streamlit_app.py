@@ -24,7 +24,6 @@ streamlit_handler.setLevel(logging.ERROR)
 logger.addHandler(streamlit_handler)
 
 # Definir la API key directamente (no recomendado para producción)
-API_KEY = 'sk-aZ3CTJF1GjnPKjV_HiQcOtcRwsKR76QIOVl5ShDxdhT3BlbkFJWTZYqtqUhhO7lEQ7jm6LXG2UGX8rK4dfSrJ9zn4EIA'
 client = OpenAI(api_key=API_KEY)
 
 def read_pdf(file):
