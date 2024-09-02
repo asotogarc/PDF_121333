@@ -24,7 +24,7 @@ streamlit_handler.setLevel(logging.ERROR)
 logger.addHandler(streamlit_handler)
 
 # Definir la API key directamente (no recomendado para producción)
-client = OpenAI(api_key=API_KEY)
+client = OpenAI(api_key=st.secrets["API_KEY"])
 
 def read_pdf(file):
     pdf_reader = pypdf.PdfReader(file)
